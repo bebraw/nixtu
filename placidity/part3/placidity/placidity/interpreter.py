@@ -1,5 +1,3 @@
-
-
 from commands import Commands
  
 class Interpreter:
@@ -25,4 +23,3 @@ class Interpreter:
                 self.vars[l_value] = int(r_value)
             except ValueError:
                 self.vars[l_value] = self.interpret(r_value)
-
