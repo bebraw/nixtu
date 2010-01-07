@@ -6,16 +6,6 @@ class TestInterpreter:
     def setup_method(self, method):
         interpreter = Interpreter()
         self.interpret = interpreter.interpret
- 
-class TestSetVariable(TestInterpreter):
- 
-    def test_set(self):
-        self.interpret('a=6')
-        assert self.interpret('a') == 6
- 
-    def test_variable_in_expression(self):
-        self.interpret('a=12')
-        assert self.interpret('a+3') == 15
 
 class TestSetVariable(TestInterpreter):
  
